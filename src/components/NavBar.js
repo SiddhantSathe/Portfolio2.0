@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Github, Linkedin, Instagram } from 'react-bootstrap-icons';
-import github from "../assets/github.png"
+import { Link } from 'react-router-dom';
 
 
 export const NavBar = () => {
@@ -39,10 +39,10 @@ const onUpdateActiveLink = (value) => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home" className = {activeLink === 'home' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-            <Nav.Link href="#skills" className = {activeLink === 'skills' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-            <Nav.Link href="#projects" className = {activeLink === 'projects' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
-            <Nav.Link href="#contact" className = {activeLink === 'contact' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}>Contact</Nav.Link>
+            <Nav.Link as={Link} to="/" className = {activeLink === 'home' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+            <Nav.Link as={Link} to="/skills" className = {activeLink === 'skills' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
+            {/* <Nav.Link href="#projects" className = {activeLink === 'projects' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link> */}
+            <Nav.Link as={Link} to="/contact" className = {activeLink === 'contact' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}>Contact</Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className='social-icons'>
