@@ -378,10 +378,11 @@ nav.navbar .navbar-toggler[aria-expanded ="true"] .navbar-toggler-icon{
 
 
 .skill{
-  height: 100vh;
+  min-height: 100vh;
+  /* height: 100vh; */
 }
 
-.skill-grid {
+/* .skill-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 30px;
@@ -398,11 +399,36 @@ nav.navbar .navbar-toggler[aria-expanded ="true"] .navbar-toggler-icon{
   border-radius: 8px;
   text-align: center;
   font-size: 1.2em;
+} */
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.skill-item {
+  background-color: rgba(75, 74, 77, 0.8); /* Added transparency */
+  height: 250px;
+  width: 150px;
+  color: #e6ebf4;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.skill-item img {
+  max-width: 100px;
+  margin-bottom: 10px;
 }
 
 .contact{
-  height: 50vh;
-  margin-bottom: 105px;
+  min-height: 50vh;
+  padding-top: 50px;
+  padding-bottom: 105px;
 }
 
 .contact-form input,

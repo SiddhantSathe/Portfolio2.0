@@ -3,43 +3,59 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 
 export const Contact = () => {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
+    var [name, setName] = useState('');
+    var [email, setEmail] = useState('');
+    var [message, setMessage] = useState('');
     const [success, setSuccess] = useState('');
     const [error, setError] = useState('');
 
-    const handleSubmit = async (event) => {
-        event.preventDefault();
-        if (!name || !email || !message) {
-            setError('All fields are required.');
-            return;
-        }
-        setSuccess('');
-        setError('');
+    // const handleSubmit = async (event) => {
+    //     event.preventDefault();
+    //     if (!name || !email || !message) {
+    //         setError('All fields are required.');
+    //         return;
+    //     }
+    //     setSuccess('');
+    //     setError('');
 
-        try{
-            const response = await fetch('localhost:3000/contact', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ name, email, message })
-            });
+    //     try{
+    //         const response = await fetch('localhost:3000/contact', {
+    //             method: 'POST',
+    //             headers: {
+    //                 'Content-Type': 'application/json'
+    //             },
+    //             body: JSON.stringify({ name, email, message })
+    //         });
             
-            if (response.ok) {
-                setSuccess('Your message has been sent successfully!');
-                setName('');
-                setEmail('');
-                setMessage('');
-            } else {
-                setError('Failed to send your message. Please try again later.');
-            }
+    //         if (response.ok) {
+    //             setSuccess('Your message has been sent successfully!');
+    //             setName('');
+    //             setEmail('');
+    //             setMessage('');
+    //         } else {
+    //             setError('Failed to send your message. Please try again later.');
+    //         }
         
-        } catch (error) {
-            setError('An error occurred. Please try again later.');
-        }
-    };
+    //     } catch (error) {
+    //         setError('An error occurred. Please try again later.');
+    //     }
+    // };
+
+    // const [formDetails,setFormDetails] = useState({
+    //     email:"",
+    //     name:"",
+    //     message:""
+    //   })
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(name, email, message);
+        setTimeout(()=>{
+        email = "";
+        name = "";
+        message = "";
+        },3000)
+      }
 
     return (
         <section className='contact' id='contact'>
