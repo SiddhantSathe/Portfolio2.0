@@ -9,7 +9,7 @@ function Layout(){
     return(
         <div>
             <AppRoutes/>
-            <Banner/>
+            {/* <Banner/> */}
             <Skills/>
             <Contact/>
         </div>
