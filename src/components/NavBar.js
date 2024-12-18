@@ -44,7 +44,7 @@ const onUpdateActiveLink = (value) => {
             <Nav.Link as={Link} to="/skills" className = {activeLink === 'skills' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link> */}
             {/* <Nav.Link onScrollCapture={Contact} className = {activeLink === 'projects' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link> */}
             {/* <Nav.Link as={Link} to="/contact" className = {activeLink === 'contact' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}>Contact</Nav.Link> */}
-            <ScrollLink
+            <ScrollLink id='navbar-scroll'
               to="home"
               smooth={true}
               duration={500}
@@ -53,7 +53,7 @@ const onUpdateActiveLink = (value) => {
             >
               Home
             </ScrollLink>
-            <ScrollLink
+            <ScrollLink id='navbar-scroll'
               to="skills"
               smooth={true}
               duration={500}
@@ -62,7 +62,7 @@ const onUpdateActiveLink = (value) => {
             >
               Skills
             </ScrollLink>
-            <ScrollLink
+            <ScrollLink id='navbar-scroll'
               to="contact"
               smooth={true}
               duration={500}

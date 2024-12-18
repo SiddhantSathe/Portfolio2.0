@@ -22,6 +22,7 @@ const Props = () => {
     { name: 'MSSQL', img: MSSQL },
     { name: 'MySQL', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg'},
     { name: 'MongoDB', img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain.svg" },
+    {name: 'PowerBI', img:'https://img.icons8.com/?size=100&id=3sGOUDo9nJ4k&format=png&color=000000'},
     { name: 'Pandas', img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" },
     { name: 'Numpy', img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original-wordmark.svg" },
     { name: 'Scikit-learn', img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" },
