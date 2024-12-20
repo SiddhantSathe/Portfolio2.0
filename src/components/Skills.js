@@ -2,13 +2,6 @@
 import React from "react";
 import { Container,Row,Col } from "react-bootstrap";
 import "react-multi-carousel/lib/styles.css";
-import Python from "../assets/python.png";
-import HTML from "../assets/icons8-html-5-240.png";
-import JS from "../assets/icons8-javascript-240.png";
-import SQL from "../assets/database.png";
-import Reacticon from "../assets/structure.png";
-import Java from "../assets/icons8-java-144.png";
-import MSSQL from "../assets/sql-server.png";
 
 
 export const Skills = ({skills}) => {

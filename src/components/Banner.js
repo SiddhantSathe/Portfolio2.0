@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from "../assets/headerImg.png";
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -11,7 +11,7 @@ export const Banner = () => {
     const toRotate = ["Software Developer", "Data Science Enthusiast", "ML Engineer", "Web Developer"];
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     
     useEffect(() => {
         let ticker = setInterval(() => {

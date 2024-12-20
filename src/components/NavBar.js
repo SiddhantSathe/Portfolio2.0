@@ -32,7 +32,7 @@ const onUpdateActiveLink = (value) => {
   return (
     <Navbar expand="lg" className={ scrolled ? 'scrolled':'' }>
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
         <h1 className='leckerli-one-regular'>Siddhant Sathe</h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
